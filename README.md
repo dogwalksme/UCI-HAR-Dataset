@@ -6,6 +6,12 @@ The data used for this project can be found
 [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 and a full description of the data set can be found [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
+
+## How to generate the tidy datasets
+
+Ensure that the Samsung data is located in the `data/` folder under 
+`data/UCI HAR Dataset`.
+
 To generate the tidy data sets run: 
 
 ```
@@ -36,8 +42,4 @@ X2.txt is a tidy dataset that averages all metrics of X1 by activity and subject
 ```
 > X2 <- aggregate(. ~ activity + subject, X, mean)
 ```
-
-### `data/merged`
-
-The merged data in it's raw form can be found in `data/merged`.
 
